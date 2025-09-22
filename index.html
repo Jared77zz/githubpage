@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <title>Mi Página Personal - Kevin Jared Alvarez</title>
+        <meta charset="UTF-8">
+
+        <style>
+            /* ESTILOS  CSS - Formato */
+            body{
+                background-color: #f4f4f4;
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                padding: 0;
+                line-height: 1.6;
+            }
+            /* TITULOS DE CADA CUADRO */
+             h1, h2, h3{
+                color: #0b3d91;
+            }
+            /* ENCABEZADO */
+            header {
+                background-image: url('imagenes/banner.png');
+                background-color: #0b3d91;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position-y: center;
+
+                color: white;
+                text-align: center;
+                padding: 20px;
+            }
+            /* TITULO PRINCIPAL */
+            header h1{
+                font-size: 2.2em;
+                margin: 5px 0;
+                color: #f7c600;
+            }
+            /* SUBTITULO */
+            header h2 {
+                margin: 5px 0;
+                color: white;
+            }
+            /* NAVEGACIÓN */
+            nav ul {
+                list-style: none;
+                padding: 0;
+            }
+            nav ul li {
+                display: inline;
+                margin: 0 15px;
+            }
+            nav ul li a {
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+            }
+            nav ul li a:hover {
+                color: #f7c600;
+            }
+            /* CONTENIDO*/
+            main {
+                padding: 20px;
+            }
+            section, article, aside {
+                background-color: white;
+                padding: 20px;
+                margin-bottom: 20px;
+                border-radius: 15px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+            }
+            aside {
+                background-color: #e0f7fa;
+                border-left: 4px solid #00b4d8;
+            }
+            /* TABLA */
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 8px;
+                text-align: center;
+            }
+            /* IMAGEN */
+            img {
+                display: block;
+                margin: 20px auto;
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 50%; /* MARCO EN FORMA CIRCULAR */
+                border: 4px solid #0b3d91;
+                background: white;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            }
+            /* VIDEO */
+            iframe {
+                display: block;
+                margin: 0 auto;
+                border: none;
+            }
+            /* PIE DE PÁGINA */
+            footer {
+                background-color: #333;
+                text-align: center;
+                color: white;
+                padding: 15px;
+            }
+            .fab {
+                color: white;
+                padding: 0 5px;
+                font-size: 1.5em;
+                opacity: 1;
+                transition: opacity 0.5s ease;
+            }
+            .fab:hover {
+                color: #f7c600;
+                opacity: 0.6;
+            }
+
+
+    </style>
+</head>
+<body>
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>Kevin Jared Alvarez Anda</h1>
+        <h2>Mi Página Personal</h2>
+        <nav>
+            <ul>
+                <li><a href="#bio">Biografía</a></li>
+                <li><a href="#hobbies">Mis Hobbies</a></li>
+                <li><a href="#tabla">Tabla</a></li>
+                <li><a href="#video">Video</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <!-- BIOGRAFÍA -->
+        <section id="bio">
+            <h2>Biografía</h2>
+            <p><b>Hola</b>, soy <u>Kevin Jared Alvarez Anda</u>.<br>
+            Tengo 19 años, vivo en <i>León, Guanajuato</i> y estudio <em>Desarrollo de Software en la Universidad Tecnológica de León</em>.  
+            Me apasiona la <span style="color:blue;">tecnología</span>, el <span style="color:green;">fútbol</span> (soy fan del Real Madrid) y la <span style="color:purple;">música</span> (en especial The Smiths).  
+            También me gusta el anime y leer mangas: mis favoritos son <b>Black Clover</b>, <b>Jujutsu Kaisen</b>, <b>Chainsaw Man</b> y <b>Shingeki no Kyojin</b>.  
+            Además, me interesa un poco la biotecnología.</p>
+            <img src="imagenes/avatar.png" alt="Mi avatar personal">
+        </section>
+
+        <!-- GUSTOS -->
+        <article id="hobbies">
+            <h2>Mis Gustos</h2>
+            <p>Una lista con mis principales gustos:</p>
+            <ol>
+                <li>Fútbol</li>
+                <li>Música (The Smiths, Pop, Rap, Trap)</li>
+                <li>Programación</li>
+                <li>Videojuegos</li>
+                <li>Anime y Manga</li>
+                <li>Comida: Pizza, Tacos, Pozole</li>
+            </ol>
+        </article>
+
+        <!-- TABLA -->
+        <aside id="tabla">
+            <h2>Datos Adicionales</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                       <th><b>Categoría</b></th>
+                       <th><b>Dato</b></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Serie Favorita</b></td>
+                        <td>Cobra Kai</td>
+                    </tr>
+                    <tr>
+                        <td><b>Lenguaje de Programación Favorito</b></td>
+                        <td>Java</td>
+                    </tr>
+                    <tr>
+                        <td><b>Color Favorito</b></td>
+                        <td>Negro y Rojo</td>
+                    </tr>
+                    <tr>
+                        <td><b>Álbum de Música Favorito</b></td>
+                        <td>The Smiths - The Queen Is Dead o Long. Live. ASAP</td>
+                    </tr>
+                    <tr>
+                        <td><b>Personaje Favorito</b></td>
+                        <td>Satoru Gojo (JJK)</td>
+                    </tr>
+                    <tr>
+                        <td><b>Videojuego Favorito</b></td>
+                        <td>Mario Kart</td>
+                    </tr>
+                </tbody>
+            </table>
+        </aside>
+
+        <!-- VIDEO -->
+          <section id="video">
+            <h2>Video</h2>
+            <iframe width="580" height="335" 
+                src="https://www.youtube.com/embed/cyylSlwwHNI" 
+                title="The Smiths - Heaven Knows I'm Miserable Now" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+        <footer>
+            <p>&copy; 2025 Kevin Jared Alvarez Anda | Contacto: kevinalvarez4777@gmail.com</p>
+            <nav>
+                <a href="https://discord.com/users/699519007719424061" target="_blank">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a href="https://github.com/Jared77zz" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </nav>
+        </footer>
+    </body>
+</html>
